@@ -1,0 +1,12 @@
+<launch>
+  <node name="cartographer_grpc_node" pkg="cartographer_ros"
+      type="cartographer_grpc_node" args="
+          -collect_metrics false
+          -configuration_directory $(find cartographer_grpc)/config
+          -configuration_basename client.lua
+          -server_address localhost:50051
+          -client_id CLIENT_ID
+          "
+      output="screen">
+  </node>
+</launch>

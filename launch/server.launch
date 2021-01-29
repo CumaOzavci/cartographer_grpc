@@ -1,0 +1,8 @@
+<launch>
+  <node name="cartographer_grpc_server" pkg="cartographer_ros"
+      type="cartographer_grpc_server.sh" args="
+          -configuration_directory $(find cartographer_grpc)/config
+          -configuration_basename server.lua
+          ">
+  </node>
+</launch>
