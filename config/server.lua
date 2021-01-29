@@ -11,7 +11,6 @@ MAP_BUILDER_SERVER = {
   enable_google_auth = false,
 }
 
---MAP_BUILDER.collate_by_trajectory = true
 MAP_BUILDER_SERVER.map_builder.use_trajectory_builder_2d = true
 
 return MAP_BUILDER_SERVER
